@@ -1,0 +1,80 @@
+libbs2b
+------------------------------------------
+The Bauer stereophonic-to-binaural DSP (bs2b) is designed
+to improve headphone listening of stereo audio records.
+
+Runtime requirements:
+  cygwin-1.7.0-50
+  libgcc1-4.3.2-2
+  libsndfile1-1.0.19-10
+  libstdc++6-4.3.2-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
+  sed-4.1.5-2
+
+Canonical website:
+  http://bs2b.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/bs2b/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libbs2b-3.1.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libbs2b-3.1.0-X.cygport all
+
+This will create:
+  /usr/src/libbs2b-3.1.0-X-src.tar.bz2
+  /usr/src/libbs2b-3.1.0-X.tar.bz2
+  /usr/src/libbs2b-devel-3.1.0-X.tar.bz2
+  /usr/src/libbs2b0-3.1.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libbs2b)
+  /usr/bin/bs2bconvert.exe
+  /usr/bin/bs2bstream.exe
+  /usr/share/doc/libbs2b/AUTHORS
+  /usr/share/doc/libbs2b/COPYING
+  /usr/share/doc/libbs2b/ChangeLog
+  /usr/share/doc/libbs2b/README
+
+(libbs2b0)
+  /usr/bin/cygbs2b-0.dll
+
+(libbs2b-devel)
+  /usr/include/bs2b/bs2b.h
+  /usr/include/bs2b/bs2bclass.h
+  /usr/include/bs2b/bs2btypes.h
+  /usr/include/bs2b/bs2bversion.h
+  /usr/lib/libbs2b.a
+  /usr/lib/libbs2b.dll.a
+  /usr/lib/libbs2b.la
+  /usr/lib/pkgconfig/libbs2b.pc
+
+------------------
+
+Port Notes:
+
+----- version 3.1.0-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
