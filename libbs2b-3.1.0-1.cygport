@@ -1,9 +1,0 @@
-DESCRIPTION="Bauer stereophonic-to-binaural DSP"
-HOMEPAGE="http://bs2b.sourceforge.net/"
-SRC_URI="mirror://sourceforge/bs2b/${P}.tar.lzma"
-PATCH_URI="3.1.0-no-undefined.patch"
-
-PKG_NAMES="${PN} ${PN}0 ${PN}-devel"
-libbs2b_CONTENTS="usr/bin/*.exe usr/share/"
-libbs2b0_CONTENTS="usr/bin/cygbs2b-0.dll"
-libbs2b_devel_CONTENTS="usr/include/ usr/lib/"
